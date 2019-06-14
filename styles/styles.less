@@ -1,0 +1,463 @@
+@import "variable";
+@import "mixin";
+
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../fonts/Proxima Nova Light.otf');
+
+}
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/ProximaNova-Regular.otf');
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/Proxima Nova Bold.otf');
+}
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'ProximaNova-Regular';
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: @color2;
+}
+textarea, input, select, button  {
+    &:focus {
+        outline: none;
+    }
+}
+.header-bg-wrapper {
+    color: @color1;
+    padding: 125px 0 95px 0;
+    text-align: center;
+    .liner-gradient();
+
+    .header-wrapper {
+        padding: 0 5%;
+    }
+    .logo-container {
+        height: 28px;
+        background: url(../assets/joomag-love-wework.svg) no-repeat center;
+        background-size: contain;
+        margin: 0 auto 50px auto;
+    }
+    h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+        font-family: 'Proxima Nova Bold';
+    }
+    p {
+        font-family: 'MYRIADPRO-REGULAR';
+        font-size: 18px;
+        padding: 0 4%;
+        line-height: 20px;
+    }
+}
+
+.logo-slider-container {
+    text-align: center;
+    padding: 68px 0 26px 0;
+
+    h3 {
+        margin-bottom: 50px;
+    }
+    .slider-outer-wrapper {
+        overflow: hidden;
+    }
+    .slider-wrapper {
+        width: 199%;
+        position: relative;
+        left: 0;
+        font-size: 0;
+        white-space: nowrap;
+        animation: slide 15s linear 3s infinite;
+        .brand-logo {
+            width: 10%;
+            height: 75px;
+            display: inline-block;
+            &:nth-of-type(1) {
+                background: url("../assets/walmart.svg") no-repeat center;
+                background-size: 80%;
+            }
+            &:nth-of-type(2) {
+                background: url("../assets/bbb.svg") no-repeat center;
+                background-size: 26%;
+            }
+            &:nth-of-type(3) {
+                background: url("../assets/ernest-brothers.svg") no-repeat center;
+                background-size: 38%;
+            }
+            &:nth-of-type(4) {
+                background: url("../assets/warner-brothers.svg") no-repeat center;
+                background-size: 35%;
+            }
+            &:nth-of-type(5) {
+                background: url("../assets/mini.svg") no-repeat center;
+                background-size: 75%;
+            }
+            &:nth-of-type(6) {
+                background: url("../assets/marriott.svg") no-repeat center;
+                background-size: 75%;
+            }
+            &:nth-of-type(7) {
+                background: url("../assets/remax.svg") no-repeat center;
+                background-size: 75%;
+            }
+            &:nth-of-type(8) {
+                background: url("../assets/jll.svg") no-repeat center;
+                background-size: 75%;
+            }
+            &:nth-of-type(9) {
+                background: url("../assets/levis.svg") no-repeat center;
+                background-size: 75%;
+            }
+            &:nth-of-type(10) {
+                background: url("../assets/costa-coffee.svg") no-repeat center;
+                background-size: 38%;
+            }
+        }
+    }
+}
+@-webkit-keyframes slide {
+    0% {left: 0%}
+    100% {left: -100%}
+}
+@-moz-keyframes slide {
+    0% {left: 0%}
+    100% {left: -100%}
+}
+@-ms-keyframes slide {
+    0% {left: 0%}
+    100% {left: -100%}
+}
+@-o-keyframes slide {
+    0% {left: 0%}
+    100% {left: -100%}
+}
+@keyframes slide {
+    0% {left: 0%}
+    100% {left: -100%}
+}
+
+.weWork-offer-container {
+    text-align: center;
+    color: @color1;
+    padding: 160px 0 185px 0;
+    background: linear-gradient(45deg ,rgba(92,71,137,0.9), rgba(41,17,109,0.9)), url(../assets/image-we-work.jpg);
+    background-size: cover;
+    transform: skew(0deg, -4deg);
+    transform-origin: right;
+    margin-bottom: 163px;
+
+    div {
+        transform: skew(0deg, 4deg);
+    }
+    h2 {
+        font-size: 36px;
+        font-family: 'Proxima Nova Bold';
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .members-information {
+        font-size: 0;
+        button {
+            color: @color1;
+            background: @color5;
+            border: none;
+            padding: 12px 26px;
+            font-size: 18px;
+        }
+        input {
+            padding: 12px 45px;
+            font-size: 18px;
+            border: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+}
+
+.feature-container {
+    padding: 0;
+    .feature-ilustration {
+        margin-bottom: 100px;
+        &.creation {
+            height: 180px;
+            background: url("../assets/creation.svg") no-repeat center;
+            background-size: contain;
+        }
+        &.generation {
+            height: 165px;
+            background: url("../assets/lead-generation.svg") no-repeat center;
+            background-size: contain;
+        }
+        &.collaboration {
+            height: 235px;
+            background: url("../assets/collaboration.svg") no-repeat center;
+            background-size: contain;
+        }
+        &.distribution {
+            height: 240px;
+            background: url("../assets/distribution.svg") no-repeat center;
+            background-size: contain;
+        }
+        &.analytics {
+            height: 200px;
+            background: url("../assets/analytics.svg") no-repeat center;
+            background-size: contain;
+        }
+    }
+    .feature-desc {
+        &.text-right {
+            text-align: right;
+            padding: 2px;
+        }
+        h2 {
+            font-family: 'Proxima Nova Bold';
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+}
+
+.transformed-background {
+    .transformed-background();
+}
+
+.weWork-bussines-offer {
+    color: @color1;
+    text-align: center;
+    padding: 175px 0;
+    .liner-gradient();
+    div {
+        padding: 0 5%;
+    }
+    h3 {
+        font-family: 'MYRIADPRO-REGULAR';
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 14px;
+        margin-top: 25px;
+        line-height: 16px;
+    }
+    .members-information {
+        font-size: 0;
+        button {
+            color: @color1;
+            background: @color5;
+            border: none;
+            padding: 12px 26px;
+            font-size: 18px;
+        }
+        input {
+            padding: 12px 45px;
+            font-size: 18px;
+            border: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+}
+
+//*********************1200px**************//
+
+@media screen and (max-width: 1200px) {
+    .weWork-offer-container {
+        padding: 190px 0 185px 0;
+        margin-bottom: 112px;
+        p {
+            margin-bottom: 37px;
+        }
+    }
+    .weWork-bussines-offer {
+        padding: 85px 0;
+        div {
+            padding: 0;
+        }
+        h3 {
+            margin-bottom: 65px;
+        }
+    }
+
+}
+//*********************991px**************//
+
+@media screen and (max-width: 991px) {
+    .header-bg-wrapper {
+        .header-wrapper {
+            padding: 0;
+        }
+     }
+    .weWork-offer-container {
+        padding: 185px 0 185px 0;
+        margin-bottom: 105px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 35px
+        }
+    }
+    .feature-container {
+        .feature-ilustration {
+            &.distribution {
+                height: 200px;
+            }
+        }
+    }
+    .weWork-bussines-offer {
+        padding: 70px 0;
+        h3 {
+            line-height: 28px;
+            margin-bottom: 35px;
+        }
+    }
+
+}
+//*********************767px**************//
+@media screen and (max-width: 767px) {
+    .header-bg-wrapper {
+        padding: 125px 2px 85px 2px;
+        .logo-container {
+            height: 21px;
+            background: url(../assets/joomag-love-wework-mobile.svg) no-repeat center;
+            background-size: contain;
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        p {
+            letter-spacing: 0px;
+            line-height: 21px;
+        }
+
+    }
+    .logo-slider-container {
+        padding: 78px 2px 90px 2px;
+        .slider-wrapper {
+            animation: slide 15s linear 3s infinite ;
+        }
+    }
+    @-webkit-keyframes slide {
+        0% {left: 0%}
+        100% {left: -600%}
+    }
+    @-moz-keyframes slide {
+        0% {left: 0%}
+        100% {left: -600%}
+    }
+    @-ms-keyframes slide {
+        0% {left: 0%}
+        100% {left: -600%}
+    }
+    @-o-keyframes slide {
+        0% {left: 0%}
+        100% {left: -600%}
+    }
+    @keyframes slide {
+        0% {left: 0%}
+        100% {left: -600%}
+    }
+    .weWork-offer-container {
+        padding: 107px 0 135px 0;
+        p {
+            margin-bottom: 0;
+            line-height: 29px;
+        }
+        .members-information {
+            input {
+                width: 99%;
+                text-align: center;
+                border-radius: 5px;
+                margin: 30px 0 30px 0;
+            }
+            button {
+                padding: 12px 30px;
+            }
+        }
+    }
+    .feature-container {
+        .feature-ilustration {
+            margin-bottom: 45px;
+            &.creation {
+                height: 148px;
+            }
+            &.generation {
+                height: 150px;
+            }
+            &.distribution {
+                height: 200px;
+            }
+            &.analytics {
+                height: 157px;
+            }
+        }
+        .feature-desc {
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 85px;
+            &.text-right {
+                text-align: center;
+                padding: 0 20px;
+            }
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+    .weWork-bussines-offer {
+        div {
+            padding: 0;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        .members-information {
+            input {
+                width: 99%;
+                text-align: center;
+                border-radius: 5px;
+                margin: 30px 0 30px 0;
+            }
+            button {
+                padding: 12px 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .logo-slider-container {
+        .slider-wrapper {
+            .brand-logo {
+                width: 25%;
+                height: 92px;
+            }
+        }
+    }
+}
+
