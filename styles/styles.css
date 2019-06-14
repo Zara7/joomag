@@ -98,7 +98,7 @@ button:focus {
   left: 0;
   font-size: 0;
   white-space: nowrap;
-  animation: slide 15s linear 3s infinite;
+  animation: slide 15s linear infinite;
 }
 .logo-slider-container .slider-wrapper .brand-logo {
   width: 10%;
@@ -318,7 +318,7 @@ button:focus {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1240px) {
   .weWork-offer-container {
     padding: 190px 0 185px 0;
     margin-bottom: 112px;
@@ -382,7 +382,7 @@ button:focus {
     padding: 78px 2px 90px 2px;
   }
   .logo-slider-container .slider-wrapper {
-    animation: slide 15s linear 3s infinite ;
+    animation: slide 15s linear infinite ;
   }
   @-webkit-keyframes slide {
     0% {
@@ -432,7 +432,6 @@ button:focus {
     line-height: 29px;
   }
   .weWork-offer-container .members-information input {
-    width: 99%;
     text-align: center;
     border-radius: 5px;
     margin: 30px 0 30px 0;
@@ -474,7 +473,6 @@ button:focus {
     margin-top: 0;
   }
   .weWork-bussines-offer .members-information input {
-    width: 99%;
     text-align: center;
     border-radius: 5px;
     margin: 30px 0 30px 0;
@@ -487,6 +485,9 @@ button:focus {
   .logo-slider-container .slider-wrapper .brand-logo {
     width: 25%;
     height: 92px;
+  }
+  .members-information input {
+    width: 99%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

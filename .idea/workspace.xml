@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25228a9f-7051-458d-ba47-57dfb400f354" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,14 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66110396">
+    <splitter split-orientation="horizontal" split-proportion="0.31514764">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="90" column="22" lean-forward="true" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+                <state>
+                  <caret line="54" selection-start-line="54" selection-end-line="54" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +54,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles/styles.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="704">
-                  <caret line="461" selection-start-line="461" selection-end-line="461" />
+                <state relative-caret-position="281">
+                  <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -68,6 +71,7 @@
       <find>slider-wrapper</find>
       <find>header-wrapper</find>
       <find>.feature-desc</find>
+      <find>animation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,14 +160,16 @@
       <workItem from="1560450493721" duration="9358000" />
       <workItem from="1560483502491" duration="7452000" />
       <workItem from="1560534356661" duration="747000" />
+      <workItem from="1560535380819" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37044000" />
+    <option name="totallyTimeSpent" value="37629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -227,17 +233,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/styles.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="461" selection-start-line="461" selection-end-line="461" />
+        <state>
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/styles/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="90" column="22" lean-forward="true" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+        <state relative-caret-position="281">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
         </state>
       </provider>
     </entry>
